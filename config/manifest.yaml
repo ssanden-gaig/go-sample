@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
         - name: pod-info
-          image: ghcr.io/ssanden-gaig/sample-go:v1.0
+          image: ghcr.io/ssanden-gaig/sample-go:v1.1
           ports:
             - containerPort: 8080
               name: http
