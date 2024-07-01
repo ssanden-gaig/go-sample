@@ -20,6 +20,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: default
   name: pod-info
 spec:
   selector:
@@ -32,12 +33,14 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
+  namespace: default
   name: pod-info
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pod-info
+  namespace: default
 spec:
   replicas: 3
   selector:
